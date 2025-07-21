@@ -11,7 +11,7 @@ describe('Transferências', () => {
         cy.verifyMessageOnToast('Transferência realizada!')
 
     })
-    it.only('Deve apresentar erro quando tentar transferir mais que 5000 sem o token', () => {
+    it('Deve apresentar erro quando tentar transferir mais que 5000 sem o token', () => {
         // Action
         cy.executeTransfer('Ana Pereira', 'Carlos Souza', '6000')
         // Assert
