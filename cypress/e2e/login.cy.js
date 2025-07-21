@@ -1,6 +1,6 @@
 describe('Login', () => {
   beforeEach(() => {
-    cy.visit(cypress.env('URL'))
+    cy.visit('/')
   })
   
   it('Login com dados válidos deve permitir entrada no sistema', () => {
